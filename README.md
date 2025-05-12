@@ -1,4 +1,4 @@
-# bitcoin-rs
+# CodeCoin ( CEC )
 
 A work-in-progress translation of the C++ Bitcoin Core (https://github.com/bitcoin/bitcoin) into Rust
 
