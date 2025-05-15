@@ -1,3 +1,4 @@
+// ---------------- [ File: bitcoin-u256/tests/arith_u256.rs ]
 crate::ix!();
 
 //-------------------------------------------[.cpp/bitcoin/src/test/arith_uint256_tests.cpp]
@@ -7,12 +8,8 @@ crate::ix!();
   | uint256 blob
   |
   */
-#[inline] pub fn arith_uint256v(vch: &Vec<u8>) -> arith_uint256 {
-    
-    todo!();
-        /*
-            return UintToArith256(uint256(vch));
-        */
+#[inline] pub const fn arith_uint256v(vch: &Vec<u8>) -> arith_uint256 {
+    uint_to_arith256(u256::from(vch))
 }
 
 pub const R1ARRAY: &[u8] = &[
@@ -803,4 +800,3 @@ pub fn almost_equal(d1: f64, d2: f64) -> bool {
 
     */
 }
-

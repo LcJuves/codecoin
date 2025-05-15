@@ -1,3 +1,4 @@
+// ---------------- [ File: bitcoin-imports/src/lib.rs ]
 #![feature(test)]
 #![feature(generic_associated_types)]
 #![feature(exact_size_is_empty)]
@@ -276,6 +277,9 @@ pub use indoc::{indoc,formatdoc};
 pub use std::ffi::OsStr;
 pub use std::fs::{File,canonicalize};
 pub use const_default::ConstDefault;
+pub use tracing::{info,warn,debug,trace,error};
+pub use traced_test::traced_test;
+pub use tracing_setup::*;
 
 pub use serde_big_array::BigArray;
 
@@ -436,6 +440,7 @@ pub use std::iter::{
     Enumerate,
 };
 
+/*
 pub use qt_core::{
     QSize,
     QModelIndex,
@@ -451,6 +456,7 @@ pub use qt_gui::{
     QColor,
     QIcon,
 };
+*/
 
 pub enum TryBlockResult<R,E> {
     Return(R),

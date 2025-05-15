@@ -1,3 +1,4 @@
+// ---------------- [ File: bitcoin-block/src/block_index.rs ]
 crate::ix!();
 
 pub const BLOCK_INDEX_N_MEDIAN_TIME_SPAN: i32 = 11;
@@ -527,8 +528,10 @@ pub fn get_block_proof(block: &BlockIndex) -> ArithU256 {
   |
   */
 pub fn last_common_ancestor(
-        pa: Option<Arc<BlockIndex>>,
-        pb: Option<Arc<BlockIndex>>) -> Option<Arc<BlockIndex>> {
+    pa: Option<Arc<BlockIndex>>,
+    pb: Option<Arc<BlockIndex>>
+
+) -> Option<Arc<BlockIndex>> {
     
     todo!();
         /*

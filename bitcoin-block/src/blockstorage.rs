@@ -1,3 +1,4 @@
+// ---------------- [ File: bitcoin-block/src/blockstorage.rs ]
 crate::ix!();
 
 //-------------------------------------------[.cpp/bitcoin/src/node/blockstorage.h]
@@ -381,10 +382,12 @@ pub fn find_block_pos(
 }
 
 pub fn find_undo_pos(
-        state:      &mut BlockValidationState,
-        n_file:     i32,
-        pos:        &mut FlatFilePos,
-        n_add_size: u32) -> bool {
+    state:      &mut BlockValidationState,
+    n_file:     i32,
+    pos:        &mut FlatFilePos,
+    n_add_size: u32
+
+) -> bool {
     
     todo!();
         /*
